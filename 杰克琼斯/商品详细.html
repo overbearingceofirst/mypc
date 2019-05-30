@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <!-- icon标签 -->
+    <link rel="shortcut icon" href="https://www.jackjones.com.cn/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <!-- bootstrap引入 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- 首页引入 -->
+   <link rel="stylesheet" href="css/商品详细.css">
+   <!-- jq引入 -->
+   <script src="jquery.js"></script>
+</head>
+<body>
+      <!-- 顶部 -->
+      <nav class="navbar navbar-fixed-top" style="height:92px;">
+        <div class="container">
+            <div class="navbar-top">
+                <span class="text-left pull-left">
+                    一件包邮
+                </span>
+                <div class="text-right pull-right navbar-topa">
+                    <a href="" id="login_passwords_match">登陆/注册</a>
+                    <a href=""><i class="glyphicon glyphicon-search"></i>搜索</a>
+                    <a href="" style="color: red;"><i class="iconfont">&#xe61d;</i>购物车<span id="cartCompleted" style="color: red;">0</span>件</a>                    <a href=""><i class="glyphicon glyphicon-list-alt"></i>我的订单</a>
+                    <a href=""><i class="glyphicon glyphicon-headphones"></i>客服热线</a>
+                    <a href="">关注JACKJONES微信
+                        <div class="under" style="z-index: 999;">
+                            <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/WeChat.png" alt="">
+                            <p>微信扫一扫关注</p>
+                            <p>第一时间了解品牌资讯！</p>
+                        </div>
+                    </a>
+                    <a href="">专属导购
+                            <div class="under" style="z-index: 999;">
+                                <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/exclusiveConsultant.jpg" alt="">
+                                <p>微信扫一扫关注</p>
+                                <p>第一时间了解品牌资讯！</p>
+                            </div>
+                    </a>
+                    <a href="">手机购物
+                            <div class="under" style="left:-122px;z-index: 999;">
+                                <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/applet.png" alt="">
+                                <p>微信扫一扫购物</p>
+                                <p>众多潮流单品助你焕新造型！</p>
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-buttom" style="position: relative;">
+              <div class="container">
+                  <div class="navbar-buttomall">
+                        <a href="" class="text-left pull-left">
+                            <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/logo.png" alt="">
+                        </a>
+                          <div class="text-right navbar-buttom-list pull-right" id="showliat">
+                                <a href="">首页
+                                </a>
+                                <a href="">所有商品</a>
+                                <a href="">春夏新风尚</a>
+                                <a href="">新品到店</a>
+                                <a href="">Editorial</a>
+                                <a href="">产品系列</a>
+                                <a href="">线上专享款</a>
+                                <a href="">MLMR品牌</a>
+                                <a href="">会员中心</a>
+                          </div>
+                          <ul>
+
+                          </ul>
+                  </div>
+              </div>  
+        </div>
+        <!-- 列表选项 -->
+        <div id="navlist12s"style="">
+            <ul class="clearfix" id="ullist12s">
+            
+            </ul>
+        </div>
+    </nav>
+    <!-- 商品详细题目 -->
+    <div class="container11">
+        <div class="detailTitle">
+            首页 / 春夏新风尚/春夏新款5折起/5折专区 / 秋男款棉弹个性磨破休闲牛仔裤长裤
+        </div>
+        <div class="detailTop goods-tab">
+            <div class="floatL">
+                <!-- 切换小图 -->
+                <div class="detailList floatL">
+                    <ul id="insets" style="height: 732px; overflow: hidden;">
+                        <li class="leftImg">
+                            <img src="img/218332581E37_p1.jpg" alt="" class="listImg">
+                        </li>
+                        <li class="leftImg">
+                            <img src="img/218332581E37_p1.jpg" alt="">
+                        </li>
+                        <li class="leftImg">
+                            <img src="img/218332581E37_p1.jpg" alt="">
+                        </li>
+                        <li class="leftImg">
+                            <img src="img/218332581E37_p1.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <!-- 大图处 -->
+                <div class="floatL cubImg " id="img-original" style="width: 464px; height: 738px;">
+                    <!-- 放大镜的小块 -->
+                    <span id="magnifier" class="magnifier none"></span>
+                    <img src="img/218332581E37_p1 (1).jpg" alt="" class="originalBig">
+                </div>
+                <!-- 信息 -->
+                <div class="detailGoodsInfo floatL">
+                    <div class="goodsName pad20 mar18" style="line-height: 24px;" id="subtitle">秋男款棉弹个性磨破休闲牛仔裤长裤</div>
+                    <div class="goodsCode pad20 mar18">
+                        <span>产品编号:</span>
+                        <span id="product">218332581E37</span>
+                    </div>
+                    <div class="goodsPrice pad20" style="background: #D3D3D3;">
+                        <div class="priceContent mar18">
+                            <span class="priceTitle">价格</span>
+                            <span>
+                                <span class="moneyFlag colorRed">￥</span>
+                                <span class="discountPrice colorRed" id="discountPrice">249.5</span>
+                                <span class="sellPrice font14">吊牌价 ￥ 499</span>
+                                <span class="discountFlag">5.0折</span>
+                            </span>
+                        </div>
+                        <div class="activeNow">
+                            <span class="activeTitle">本店活动</span>
+                            <span class="sendFree">满一件，包邮</span>
+                        </div>
+                    </div>
+                    <div class="sizesList pad20">
+                        <div class="color99 font14 width96 leftAlign">尺码</div>
+                        <ul class="width384" id="getSize">
+                            <li class="singleSize sizeActive">165/74A/XSRW</li>
+                            <li class="singleSize">165/74A/XSRW</li>
+                            <li class="singleSize activeStock">165/74A/XSRW</li>
+                            <li class="singleSize">165/74A/XSRW</li>
+                            <li class="singleSize">165/74A/XSRW</li>
+                            <li class="singleSize">165/74A/XSRW</li>
+                            <li class="singleSize activeStock">165/74A/XSRW</li>
+
+                        </ul>
+                    </div>
+                    <div class="colorsList pad20 mar18">
+                        <div class="color99 font14 width96 leftAlign line90">颜色</div>
+                        <ul class="width384" id="imgArray">
+                            <li class="singleColor activeColor">
+                                <img src="img/218332581E37_p3.jpg" alt="" style="width: 52px;">
+                                <span class="chooseIcon"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="countContent pad20">
+                        <div class="color99 font14 width96 leftAlign">数量</div>
+                        <div>
+                            <div class="calContent">
+                                <div class="buyCount" style="text-align: center;" id="of_get_regulation_constraints">1</div>
+                                <div class="calStyle" style="text-align: center;">
+                                    <div class="countPlus curPointer" id="increase">+</div>
+                                    <div class="curPointer" id="reduce">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stockStyle font14">
+                            <span>库存:</span>
+                            <span class="colorRed mar5" id="sizeof">15</span>
+                            <span class="mar5">件</span>
+                        </div>
+                    </div>
+                    <div class="buttonContent pad20">
+                        <div class="addCart"  id="jiaru">
+                            <!-- <a href="" > -->
+                                    加入购物车
+                            <!-- </a> -->
+                        </div>
+                        <div class="buyNow">立即购买</div>
+                    </div>
+                </div>
+            </div>
+            <div class="goodsRecommend floatL">
+                <div>---- 热销推荐 ----</div>
+                <div style="height:714px">
+                    <ul id="Photography" style="width:128px;">
+                        <li>
+                            <a href="" target="_blank"></a>
+                            <div class="hotImg">
+                                <img src="img/219232510E37_p3.jpg" alt="">
+                            </div>
+
+                            <div class="hotAllPrice">
+                                <span class="hotOriginalPrice font14">
+                                    <span class="font12">￥</span>
+                                    <span>499</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hotImg">
+                                <img src="img/219232510E37_p3.jpg" alt="">
+                            </div>
+
+                            <div class="hotAllPrice">
+                                <span class="hotOriginalPrice font14">
+                                    <span class="font12">￥</span>
+                                    <span>499</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hotImg">
+                                <img src="img/219232510E37_p3.jpg" alt="">
+                            </div>
+
+                            <div class="hotAllPrice">
+                                <span class="hotOriginalPrice font14">
+                                    <span class="font12">￥</span>
+                                    <span>499</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chooseHot" style="font-size: 17px;">
+                    <!-- <i class="glyphicon glyphicon-chevron-up"></i> -->
+                    <div class="goNext"></div>
+                    <!-- <i class="glyphicon glyphicon-chevron-down"></i> -->
+                    <div class="goPrevious"></div>
+                </div>
+            </div>
+            <!--放大镜大图 -->
+            <div id="bigger" class="bigger none" >
+                <!-- 放大功能也在这里 -->
+                <img id="biggerImg" src="img/218332581E37_p1 (2).jpg" alt="" class="imgBigger">
+            </div>
+        </div>
+        <!-- 线 -->
+        <div class="singleLine"></div>
+        <!-- 详情 -->
+        <div class="detailBottom">
+            <div data-v-205c3502 class="claffifyTree">
+                <ul data-v-205c3502 id="catalogue_descape">
+                    <li data-v-205c3502 class="firstLevel fontB font14">
+                        <div data-v-205c3502>
+                            <span data-v-205c3502>春夏新风尚</span>
+                        </div>
+                        <ul data-v-205c3502 neme="slide-trans" class="secondContent">
+                            <li data-v-205c3502 class="secondLevel">
+                                <div data-v-205c3502>
+                                    <span data-v-205c3502>5折起</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-v-205c3502 class="firstLevel fontB font14">
+                            <div data-v-205c3502>
+                                <span data-v-205c3502>春夏新风尚</span>
+                            </div>
+                            <ul data-v-205c3502 neme="slide-trans" class="secondContent">
+                                <li data-v-205c3502 class="secondLevel">
+                                    <div data-v-205c3502>
+                                        <span data-v-205c3502>5折起</span>
+                                    </div>
+                                </li>
+                            </ul>
+                    </li>
+                    <li data-v-205c3502 class="firstLevel fontB font14">
+                            <div data-v-205c3502>
+                                <span data-v-205c3502>春夏新风尚</span>
+                            </div>
+                            <ul data-v-205c3502 neme="slide-trans" class="secondContent">
+                                <li data-v-205c3502 class="secondLevel">
+                                    <div data-v-205c3502>
+                                        <span data-v-205c3502>5折起</span>
+                                    </div>
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="ifameShow">
+                    <iframe src="https://www.jackjones.com.cn/goodsImagePC/JACKJONES/218332581/html/description_2.html" scrolling="no" frameborder="no" border="0" id="goodsFrame" height="8253"></iframe>
+                </div>
+                <div>
+                    <img src="img/ON.dab4e596.jpg" alt="">
+                </div>
+            </div>
+            <div class="recommendYou">
+                <div style="width: 134px;">---- 猜你喜欢 ----</div>
+                <div>
+                    <ul id="dolike">
+                        <li>
+                            <div>
+                                <img src="img/219232510E37_p3 (1).jpg" alt="">
+                            </div>
+                            <div class="hotAllPrice">
+                                <span class="hotOriginalPrice font14">
+                                    <span class="font12">￥</span>
+                                    <span>499</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/219232510E37_p3 (1).jpg" alt="">
+                            </div>
+                            <div class="hotAllPrice">
+                                <span class="hotOriginalPrice font14">
+                                    <span class="font12">￥</span>
+                                    <span>499</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/219232510E37_p3 (1).jpg" alt="">
+                            </div>
+                            <div class="hotAllPrice">
+                                <span class="hotOriginalPrice font14">
+                                    <span class="font12">￥</span>
+                                    <span>499</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- 结束 -->
+     <div class="last">
+            <div data-v-762283a8  class="line1"></div>
+            <div data-v-762283a8 class="footer">
+                <div data-v-762283a8 class="footerTop">
+                    <div data-v-762283a8 class="container1">
+                        <div data-v-678eb162 data-v-762283a8 class="mailClass" sendemail>
+                            <div data-v-678eb162 class="alignC">
+                                <div data-v-678eb162 class="hotimg">
+                                    <img src="img/下载.png" alt="">
+                                </div>
+                                <div data-v-678eb162 class="agreementTitle">用户服务协议</div>
+                                <div data-v-678eb162 class="bookNow">点击查看</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-762283a8 class="columnLine"></div>
+                    <div data-v-762283a8 class="container2">
+                        <div data-v-191e4416 data-v-762283a8 class="QRCodeDiv" style="text-align: center;">
+                            <div data-v-191e4416 class="QRCodeMain">
+                                <img src="img/exclusiveConsultant.jpg" alt="">
+                                <p data-v-191e4416 class="QRCodeMainTitle">专属时尚顾问</p>
+                            </div>
+                            <div data-v-191e4416 class="QRCodeMain">
+                                <img src="img/applet.png" alt="">
+                                <p data-v-191e4416 class="QRCodeMainTitle">小程序</p>
+                            </div>
+                            <div data-v-191e4416 class="QRCodeMain">
+                                <img src="img/WeChat.png" alt="">
+                                <p data-v-191e4416 class="QRCodeMainTitle">官方微信</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-762283a8 class="columnLine"></div>
+                    <div data-v-762283a8 class="container1">
+                        <div data-v-678eb162 data-v-762283a8 class="mailClass" sendemail>
+                            <div data-v-678eb162 class="alignC">
+                                <div data-v-678eb162 class="hotimg">
+                                    <img src="img/下载 (1).png" alt="">
+                                </div>
+                                <div data-v-23f76028 class="hotText">
+                                    <p data-v-23f76028>售后服务热线</p>
+                                    <p data-v-23f76028 class="maring5">400-862-8888</p>
+                                    <p data-v-23f76028>服务时间：9:00-21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-762283a8  class="line1"></div>
+            <div data-v-07590446 data-v-762283a8 class="CustomerService">
+                <div data-v-07590446 class="service">
+                    <div data-v-07590446>在线客服 即时答疑</div>
+                    <div data-v-07590446>
+                        <img data-v-07590446 src="img/下载6.png" alt="">
+                    </div>
+                    <div data-v-07590446 class="time">
+                        <span data-v-07590446>
+                            
+                            服务时间（工作日 9:00-24:00）
+          
+                        </span>
+                        <div data-v-07590446 id="hoverBox" class="disnone">
+                            <div data-v-07590446>
+                                JACKJONES中国官网（jackjones.com.cn）是JACKJONES在大陆的正规网络销售平台，JACKJONES工作人员不会以任何形式要求您购买JACKJONES优惠券、或向您提供非官方网站链接（或二维码）要求您购买JACKJONES商品。
+                            </div>
+                            <div data-v-07590446>如有任何疑问，请您联系网上客服或致电400-862-8888。谢谢您的支持，祝您购物愉快！</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-762283a8  class="line2"></div>
+            <div data-v-762283a8 data-v-3d34c33e class="otherBrands">
+                <ul data-v-3d34c33e class="brandsFlex">
+                    <li data-v-3d34c33e class="wid216">
+                        <a data-v-3d34c33e href="">
+                            <img src="img/logo-footer.png" alt="">
+                        </a>
+                    </li>
+                    <li data-v-3d34c33e class="wid216">
+                        <a data-v-3d34c33e href="">
+                            <img src="img/logo-footer (1).png" alt="">
+                        </a>
+                    </li>
+                    <li data-v-3d34c33e class="wid216">
+                        <a data-v-3d34c33e href="" target="_blank">
+                            <img src="img/logo-footer (2).png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-v-762283a8 data-v-6fb0e722 class="container">
+                <div data-v-6fb0e722 class="icpClass">© 2013 Bestseller. All Rights Reserved</div>
+                <div data-v-6fb0e722 class="icpClass">
+                    
+                    津ICP备12007886号 -1
+                    <a href="" data-v-6fb0e722>(营业执照)</a>
+        
+                </div>
+            </div>
+    
+        </div>
+        <script src="js/Details.js"></script>
+</body>
+</html> 
+        

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <!-- icon标签 -->
+    <link rel="shortcut icon" href="https://www.jackjones.com.cn/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <!-- bootstrap引入 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- 首页引入 -->
+   <link rel="stylesheet" href="css/登录页面.css">
+   <!-- jq引入 -->
+   <script src="jquery.js"></script>
+</head>
+<body>
+      <!-- 顶部 -->
+      <nav class="navbar navbar-fixed-top" style="height:92px;">
+        <div class="container">
+            <div class="navbar-top">
+                <span class="text-left pull-left">
+                    一件包邮
+                </span>
+                <div class="text-right pull-right navbar-topa">
+                    <a href="">登陆/注册</a>
+                    <a href=""><i class="glyphicon glyphicon-search"></i>搜索</a>
+                    <a href="" style="color: red;"><i class="iconfont">&#xe61d;</i>购物车0件</a>
+                    <a href=""><i class="glyphicon glyphicon-list-alt"></i>我的订单</a>
+                    <a href=""><i class="glyphicon glyphicon-headphones"></i>客服热线</a>
+                    <a href="">关注JACKJONES微信
+                        <div class="under" style="z-index: 999;">
+                            <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/WeChat.png" alt="">
+                            <p>微信扫一扫关注</p>
+                            <p>第一时间了解品牌资讯！</p>
+                        </div>
+                    </a>
+                    <a href="">专属导购
+                            <div class="under" style="z-index: 999;">
+                                <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/exclusiveConsultant.jpg" alt="">
+                                <p>微信扫一扫关注</p>
+                                <p>第一时间了解品牌资讯！</p>
+                            </div>
+                    </a>
+                    <a href="">手机购物
+                            <div class="under" style="left:-122px;z-index: 999;">
+                                <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/applet.png" alt="">
+                                <p>微信扫一扫购物</p>
+                                <p>众多潮流单品助你焕新造型！</p>
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-buttom" style="position: relative;">
+              <div class="container">
+                  <div class="navbar-buttomall">
+                        <a href="" class="text-left pull-left">
+                            <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/logo.png" alt="">
+                        </a>
+                          <div class="text-right navbar-buttom-list pull-right" id="showliat">
+                                <a href="">首页
+                                </a>
+                                <a href="">所有商品</a>
+                                <a href="">春夏新风尚</a>
+                                <a href="">新品到店</a>
+                                <a href="">Editorial</a>
+                                <a href="">产品系列</a>
+                                <a href="">线上专享款</a>
+                                <a href="">MLMR品牌</a>
+                                <a href="">会员中心</a>
+                          </div>
+                          <ul>
+
+                          </ul>
+                  </div>
+              </div>  
+        </div>
+        <!-- 列表选项 -->
+        <div id="navlist12s"style="">
+            <ul class="clearfix" id="ullist12s">
+            
+            </ul>
+        </div>
+    </nav>
+    <!-- 大图 -->
+    <div class="paddingTop outermostShell">
+        <div>
+            <img src="https://cdn.bestseller.com.cn/assets/pc/JACKJONES/images/loginBottom.jpg" alt="">
+        </div>
+        <!-- 登录 -->
+        <!-- //设置input的css属性：点击时候，设置颜色值为透明
+            -webkit-tap-highlight-color:rgba(255,0,0,0); -->
+        <div class="login-box positionAbs">
+            <div class="login-wrapper">
+                <p class="login-ph" style="text-align: center;">会员登录</p>
+                <form method="post" class="login-form"> 
+                    <div class="login-init">
+                        <div class="username marb20 publicFlex">
+                            <label for="username" class="text-r"></label>
+                            <input type="text" name="username" placeholder="请输入手机号登录" id="mobile">
+                            <span class="color-red" id="phone"></span>
+                        </div>
+                        <div class="security marb20 publicFlex">
+                            <div class="publicFlex">
+                                <label for="security" class="text-r">
+                                    <!-- 输入错误会在登录后面提示 -->
+                                    <input type="text" name="security" placeholder="请输入正确答案" id="code" style="font-weight: normal;">
+                                    <span></span>
+                                </label>
+                            </div>
+                            <!-- 点击图片会切换图片 -->
+                            <div style="text-align: center;font-weight: normal;" id="color">
+                                <span style=" font-weight: bold;  font-size: 20px;"></span>
+                                <span style=" font-weight: bold ; font-size: 20px;"></span>
+                                <span style=" font-weight: bold; font-size: 20px;"></span>
+                                <span style=" font-weight: bold; font-size: 20px;">=</span>
+                                <span style=" font-weight: bold; font-size: 20px;">?</span>
+                            </div>
+                        </div>
+                        <div class="password marb40">
+                            <input type="text" name="password" placeholder="请输入短信验证码" id="smsID">
+                            <button type="button" class="get-msg-btn" >获取验证码</button>
+                            <!-- 注意 -->
+                            <!-- 输入错误会在登录后面提示 -->
+                            <span class="color-red" id="PromptEvent"></span>
+                        </div>  
+                    </div>
+                    <input type="button" value="登录/注册" class="login-btn">
+                    <!-- 注意 -->
+                    <span class="color-red"></span>
+                </form>
+                <div class="tip">若您尚未注册会员，可先输入手机号，获取并再次输入动态验证码，登录同时将注册为会员。</div>
+            </div>
+        </div>
+    </div>
+     <!-- 结束 -->
+     <div class="last">
+            <div data-v-762283a8  class="line1"></div>
+            <div data-v-762283a8 class="footer">
+                <div data-v-762283a8 class="footerTop">
+                    <div data-v-762283a8 class="container1">
+                        <div data-v-678eb162 data-v-762283a8 class="mailClass" sendemail>
+                            <div data-v-678eb162 class="alignC">
+                                <div data-v-678eb162 class="hotimg">
+                                    <img src="img/下载.png" alt="">
+                                </div>
+                                <div data-v-678eb162 class="agreementTitle">用户服务协议</div>
+                                <div data-v-678eb162 class="bookNow">点击查看</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-762283a8 class="columnLine"></div>
+                    <div data-v-762283a8 class="container2">
+                        <div data-v-191e4416 data-v-762283a8 class="QRCodeDiv" style="text-align: center;">
+                            <div data-v-191e4416 class="QRCodeMain">
+                                <img src="img/exclusiveConsultant.jpg" alt="">
+                                <p data-v-191e4416 class="QRCodeMainTitle">专属时尚顾问</p>
+                            </div>
+                            <div data-v-191e4416 class="QRCodeMain">
+                                <img src="img/applet.png" alt="">
+                                <p data-v-191e4416 class="QRCodeMainTitle">小程序</p>
+                            </div>
+                            <div data-v-191e4416 class="QRCodeMain">
+                                <img src="img/WeChat.png" alt="">
+                                <p data-v-191e4416 class="QRCodeMainTitle">官方微信</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-762283a8 class="columnLine"></div>
+                    <div data-v-762283a8 class="container1">
+                        <div data-v-678eb162 data-v-762283a8 class="mailClass" sendemail>
+                            <div data-v-678eb162 class="alignC">
+                                <div data-v-678eb162 class="hotimg">
+                                    <img src="img/下载 (1).png" alt="">
+                                </div>
+                                <div data-v-23f76028 class="hotText">
+                                    <p data-v-23f76028>售后服务热线</p>
+                                    <p data-v-23f76028 class="maring5">400-862-8888</p>
+                                    <p data-v-23f76028>服务时间：9:00-21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-762283a8  class="line1"></div>
+            <div data-v-07590446 data-v-762283a8 class="CustomerService">
+                <div data-v-07590446 class="service">
+                    <div data-v-07590446>在线客服 即时答疑</div>
+                    <div data-v-07590446>
+                        <img data-v-07590446 src="img/下载6.png" alt="">
+                    </div>
+                    <div data-v-07590446 class="time">
+                        <span data-v-07590446>
+                            
+                            服务时间（工作日 9:00-24:00）
+          
+                        </span>
+                        <div data-v-07590446 id="hoverBox" class="disnone">
+                            <div data-v-07590446>
+                                JACKJONES中国官网（jackjones.com.cn）是JACKJONES在大陆的正规网络销售平台，JACKJONES工作人员不会以任何形式要求您购买JACKJONES优惠券、或向您提供非官方网站链接（或二维码）要求您购买JACKJONES商品。
+                            </div>
+                            <div data-v-07590446>如有任何疑问，请您联系网上客服或致电400-862-8888。谢谢您的支持，祝您购物愉快！</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-762283a8  class="line2"></div>
+            <div data-v-762283a8 data-v-3d34c33e class="otherBrands">
+                <ul data-v-3d34c33e class="brandsFlex">
+                    <li data-v-3d34c33e class="wid216">
+                        <a data-v-3d34c33e href="">
+                            <img src="img/logo-footer.png" alt="">
+                        </a>
+                    </li>
+                    <li data-v-3d34c33e class="wid216">
+                        <a data-v-3d34c33e href="">
+                            <img src="img/logo-footer (1).png" alt="">
+                        </a>
+                    </li>
+                    <li data-v-3d34c33e class="wid216">
+                        <a data-v-3d34c33e href="" target="_blank">
+                            <img src="img/logo-footer (2).png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-v-762283a8 data-v-6fb0e722 class="container">
+                <div data-v-6fb0e722 class="icpClass">© 2013 Bestseller. All Rights Reserved</div>
+                <div data-v-6fb0e722 class="icpClass">
+                    
+                    津ICP备12007886号 -1
+                    <a href="" data-v-6fb0e722>(营业执照)</a>
+        
+                </div>
+            </div>
+    
+        </div>
+        <script src="js/Login.js"></script>
+</body>
+</html>
